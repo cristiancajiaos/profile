@@ -39,7 +39,11 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "outputPath": "dist/portfolio",
+            "stylePreprocessorOptions": {
+              "includePaths": [""]
+            }
           },
           "configurations": {
             "production": {

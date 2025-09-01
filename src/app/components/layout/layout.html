@@ -1,11 +1,16 @@
 <section class="layout">
-  <app-header></app-header>
-  <div class="container">
-    <hr/>
-  </div>
-  <app-main></app-main>
-  <div class="container">
-    <hr/>
-  </div>
-  <app-footer></app-footer>
+  <ng-container *ngIf="!loadingLayout">
+    <app-header></app-header>
+    <div class="container">
+      <hr />
+    </div>
+    <app-main></app-main>
+    <div class="container">
+      <hr />
+    </div>
+    <app-footer></app-footer>
+  </ng-container>
+  <ng-container *ngIf="loadingLayout">
+    <app-loading></app-loading>
+  </ng-container>
 </section>

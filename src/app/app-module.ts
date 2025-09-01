@@ -14,6 +14,7 @@ import { Links } from './components/main/links/links';
 import { RouterModule } from '@angular/router';
 import { StackExchange } from './components/main/stack-exchange/stack-exchange';
 import { Contact } from './components/main/contact/contact';
+import { Loading } from './components/shared/loading/loading';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Contact } from './components/main/contact/contact';
     Description,
     Links,
     StackExchange,
-    Contact
+    Contact,
+    Loading
   ],
   imports: [
     BrowserModule,

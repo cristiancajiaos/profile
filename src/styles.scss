@@ -3,6 +3,9 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
+/* Assets */
+@import 'assets/scss/main.scss';
+
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
 }

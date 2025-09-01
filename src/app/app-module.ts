@@ -9,6 +9,11 @@ import { Layout } from './components/layout/layout';
 import { Header } from './components/layout/header/header';
 import { Main } from './components/layout/main/main';
 import { Footer } from './components/layout/footer/footer';
+import { Description } from './components/main/description/description';
+import { Links } from './components/main/links/links';
+import { RouterModule } from '@angular/router';
+import { StackExchange } from './components/main/stack-exchange/stack-exchange';
+import { Contact } from './components/main/contact/contact';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,18 @@ import { Footer } from './components/layout/footer/footer';
     Layout,
     Header,
     Main,
-    Footer
+    Footer,
+    Description,
+    Links,
+    StackExchange,
+    Contact
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

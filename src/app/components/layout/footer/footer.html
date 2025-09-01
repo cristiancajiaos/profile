@@ -1,0 +1,16 @@
+<footer>
+  <div class="container">
+    <p>
+      &#169; Cristian Cajiao Skarnic, 
+      <ng-container *ngTemplateOutlet="(creationYear == currentYear) ? year : rangeYears">
+      </ng-container>
+    </p>
+  </div>
+</footer>
+
+<ng-template #year>
+  {{currentYear}}
+</ng-template>
+<ng-template #rangeYears>
+  {{creationYear}} - {{currentYear}}
+</ng-template>
